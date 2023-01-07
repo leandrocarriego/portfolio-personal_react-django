@@ -1,0 +1,10 @@
+
+  .navbar {
+    background-color: $color-secundario;
+    @include desktop {
+      background-color: rgba(0, 0, 0, 0);
+      position: absolute;
+      width: 100%;
+    }
+  }
+

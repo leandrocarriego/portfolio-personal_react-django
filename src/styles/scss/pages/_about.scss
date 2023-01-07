@@ -1,0 +1,24 @@
+.about {
+  .seccion3 {
+    background-image: url(../../img/nosotros3-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .boton {
+      a {
+        text-decoration: none;
+        &:hover {
+          color: #d2cfcf;
+        }
+      }
+    }
+    @include desktop {
+      background-image: url(../../img/nosotros3-desktop.jpg);
+    }
+  }
+}

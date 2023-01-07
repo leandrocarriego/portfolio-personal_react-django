@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #d2cfcf;
+}
+
+* {
+  font-family: "Migra", sans-serif;
+}
+
+body {
+  background-color: #141618;
+  color: #fff;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3921568627);
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.encabezado {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .autor a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .autor a:hover {
+  color: #d2cfcf;
+}/*# sourceMappingURL=main.css.map */

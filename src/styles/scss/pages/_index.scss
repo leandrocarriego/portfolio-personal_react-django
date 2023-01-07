@@ -1,0 +1,56 @@
+.index {
+  .seccion1 {
+    background-image: url(../../img/inicio1-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include desktop {
+      height: 200vh;
+      background-image: url(../../img/inicio1-desktop.jpg);
+    }
+  }
+
+  .seccion2 {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: #d2cfcf;
+      }
+    }
+  }
+
+  .seccion3 {
+    background-image: url(../../img/inicio3-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    article {
+      .boton {
+        a {
+          text-decoration: none;
+          &:hover {
+            color: #d2cfcf;
+          }
+        }
+      }
+    }
+    @include desktop {
+      background-image: url(../../img/inicio3-desktop.jpg);
+    }
+  }
+}

@@ -3,7 +3,9 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import Home from "containers/pages/Home";
+import About from "containers/pages/About";
 import Projects from "containers/pages/Projects";
+import Contact from "containers/pages/Contact";
 import Error404 from "containers/errors/Error404";
 
 function App() {
@@ -13,7 +15,9 @@ function App() {
         <Routes>
           <Route path="*" element={<Error404/>} />
           <Route path="/" element={<Home/>} />
+          <Route path="/about/" element={<About/>} />
           <Route path="/projects/" element={<Projects/>} />
+          <Route path="/contact/" element={<Contact/>} />
         </Routes>
       </Router>
     </Provider>
