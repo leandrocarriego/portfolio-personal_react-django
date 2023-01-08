@@ -1,13 +1,14 @@
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <header className="header sticky-top">
       <nav className="navbar navbar-expand-md navbar-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="./index.html">
+          <Link to="/" className="navbar-brand">
             Leandro Carriego
-          </a>
+          </Link>
           <button
             className="navbar-toggler navbar__button"
             type="button"
@@ -25,24 +26,33 @@ function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="./pages/about.html">
-                  Sobre mi
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="./pages/clients.html">
+                <a
+                  className="nav-link"
+                  href="#selectedProjects"
+                >
                   Trabajos
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./pages/contact.html">
+                <a
+                  className="nav-link"
+                  href="#contact"
+                >
                   Contacto
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="./pages/contact.html">
-                  Descargar CV
-                </a>
+                <button>
+                  <a
+                    className="nav-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                    href="./assets/downloads/cv_leandro_carriego.pdf"
+                  >
+                    Descargar CV
+                  </a>
+                </button>
               </li>
             </ul>
           </div>

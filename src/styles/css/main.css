@@ -18,7 +18,7 @@ a:hover {
 }
 
 * {
-  font-family: "Migra", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 body {
@@ -26,11 +26,12 @@ body {
   color: #fff;
 }
 
-.navbar {
+.header .navbar {
   background-color: rgba(0, 0, 0, 0.3921568627);
+  font-family: "Libre Franklin", sans-serif;
 }
 @media screen and (min-width: 768px) {
-  .navbar {
+  .header .navbar {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     width: 100%;
@@ -50,4 +51,67 @@ footer .autor a {
 }
 footer .autor a:hover {
   color: #d2cfcf;
+}
+
+.index .presentation {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .index .presentation {
+    height: 200vh;
+  }
+}
+.index .about {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .about a {
+  text-decoration: none;
+  color: #fff;
+}
+.index .about a:hover {
+  color: #d2cfcf;
+}
+.index .skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index .skills article .boton a {
+  text-decoration: none;
+}
+.index .skills article .boton a:hover {
+  color: #d2cfcf;
+}
+.index .selected-projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.index .selected-projects article .boton a {
+  text-decoration: none;
+}
+.index .selected-projects article .boton a:hover {
+  color: #d2cfcf;
+}
+.index .contact .contacto-encabezado {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .index .contact .contacto-encabezado {
+    height: 60vh;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,10 +1,12 @@
-
+.header{
   .navbar {
-    background-color: $color-secundario;
+    background-color: $color-secondary;
+    font-family: $font-secondary;
     @include desktop {
       background-color: rgba(0, 0, 0, 0);
       position: absolute;
       width: 100%;
     }
   }
-
+}
+  
