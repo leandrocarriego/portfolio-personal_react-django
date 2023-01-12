@@ -1,78 +1,65 @@
 .index {
   .presentation {
     height: 100vh;
+    font-family: $font-secondary;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include desktop {
-      height: 200vh;
+    div {
+      .title {
+        font-family: $font-secondary;
+      }
+      ul {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      div {
+        margin-top: 4em;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
     }
   }
 
   .about {
-    height: 110vh;
+    height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    a {
-      text-decoration: none;
-      color: #fff;
-      &:hover {
-        color: #d2cfcf;
-      }
-    }
   }
 
   .skills {
-    height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    article {
-      .boton {
-        a {
-          text-decoration: none;
-          &:hover {
-            color: #d2cfcf;
-          }
-        }
+    div {
+      width: 100%;
+      h2 {
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
       }
     }
-    @include desktop {
-      
-    }
   }
+  
   .selected-projects {
-    height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    article {
-      .boton {
-        a {
-          text-decoration: none;
-          &:hover {
-            color: #d2cfcf;
-          }
-        }
-      }
-    }
-    @include desktop {
-      
-    }
-  }
-  .contact {
-    .contacto-encabezado {
-      height: 40vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include desktop {
-        height: 60vh;
-      }
-    }
   }
 }

@@ -1,50 +1,67 @@
+import { useState } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="header sticky-top">
-      <nav className="navbar navbar-expand-md navbar-dark">
-        <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
-            Leandro Carriego
-          </Link>
-          <button
-            className="navbar-toggler navbar__button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon "></span>
+    <nav className="navbar">
+      <div className="brand-div">
+        <Link to="/" className="brand">
+          Leandro Carriego
+        </Link>
+      </div>
+      <ul className="navbar-nav nav-desktop">
+        <li className="nav-item">
+          <a className="nav-link" href="#selectedProjects">
+            Trabajos
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#contact">
+            Contacto
+          </a>
+        </li>
+        <li className="nav-item">
+          <button>
+            <a
+              className=""
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              href="./assets/downloads/cv_leandro_carriego.pdf"
+            >
+              Descargar CV
+            </a>
           </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav">
+        </li>
+      </ul>
+
+      <div className="menu-mobile">
+        {open ? (
+          <div className="menu-open">
+          <i
+              onClick={() => {
+                setOpen(false);
+              }}
+              className="bi bi-x"
+            ></i>
+            <ul className="navbar-nav nav-mobile">
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#selectedProjects"
-                >
+                <a className="link" href="#selectedProjects">
                   Trabajos
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#contact"
-                >
+                <a className="link" href="#contact">
                   Contacto
                 </a>
               </li>
               <li className="nav-item">
                 <button>
                   <a
-                    className="nav-link"
+                    className="link"
                     target="_blank"
                     rel="noopener noreferrer"
                     download
@@ -55,10 +72,18 @@ function Navbar() {
                 </button>
               </li>
             </ul>
+            
           </div>
-        </div>
-      </nav>
-    </header>
+        ) : (
+          <i
+            onClick={() => {
+              setOpen(true);
+            }}
+            className="bi bi-filter-right"
+          ></i>
+        )}
+      </div>
+    </nav>
   );
 }
 

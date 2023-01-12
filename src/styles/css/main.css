@@ -11,7 +11,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 a:hover {
   color: #d2cfcf;
@@ -21,27 +21,62 @@ a:hover {
   font-family: "Libre Franklin", sans-serif;
 }
 
-body {
-  background-color: #141618;
-  color: #fff;
-}
-
-.header .navbar {
+.navbar {
   background-color: rgba(0, 0, 0, 0.3921568627);
-  font-family: "Libre Franklin", sans-serif;
+  color: #fff;
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navbar .brand-div .brand {
+  font-family: "Libre Franklin";
+}
+.navbar .nav-desktop {
+  display: none;
 }
 @media screen and (min-width: 768px) {
-  .header .navbar {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    width: 100%;
+  .navbar .nav-desktop {
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
-
-.encabezado {
-  height: 100vh;
+.navbar .menu-mobile {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  justify-content: center;
+  gap: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navbar .menu-mobile {
+    display: none;
+  }
+}
+.navbar .menu-mobile .menu-open {
+  background-color: red;
+  width: 70vw;
+  height: 100vh;
+}
+.navbar .menu-mobile .bi {
+  font-size: 3em;
+}
+.navbar .menu-mobile .nav-mobile {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -55,63 +90,59 @@ footer .autor a:hover {
 
 .index .presentation {
   height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .index .presentation {
-    height: 200vh;
-  }
+.index .presentation div .title {
+  font-family: "Libre Franklin", sans-serif;
+}
+.index .presentation div ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.index .presentation div div {
+  margin-top: 4em;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .index .about {
-  height: 110vh;
+  height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.index .about a {
-  text-decoration: none;
-  color: #fff;
-}
-.index .about a:hover {
-  color: #d2cfcf;
 }
 .index .skills {
-  height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.index .skills article .boton a {
-  text-decoration: none;
+.index .skills div {
+  width: 100%;
 }
-.index .skills article .boton a:hover {
-  color: #d2cfcf;
+.index .skills div h2 {
+  text-align: center;
+}
+.index .skills div ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .index .selected-projects {
-  height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.index .selected-projects article .boton a {
-  text-decoration: none;
-}
-.index .selected-projects article .boton a:hover {
-  color: #d2cfcf;
-}
-.index .contact .contacto-encabezado {
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .index .contact .contacto-encabezado {
-    height: 60vh;
-  }
 }/*# sourceMappingURL=main.css.map */

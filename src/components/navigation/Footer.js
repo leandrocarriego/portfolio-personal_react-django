@@ -9,6 +9,7 @@ function Footer() {
             className="btn btn-outline-light btn-floating m-1"
             href="https://www.linkedin.com/in/leandro-carriego/"
             role="button"
+            target="_blank"
           >
             <i className="bi bi-linkedin"></i>
           </a>
@@ -17,6 +18,7 @@ function Footer() {
             className="btn btn-outline-light btn-floating m-1"
             href="https://github.com/leandrocarriego/"
             role="button"
+            target="_blank"
           >
             <i className="bi bi-github"></i>
           </a>
