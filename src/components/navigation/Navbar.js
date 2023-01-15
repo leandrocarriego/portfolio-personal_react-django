@@ -24,9 +24,8 @@ function Navbar() {
           </a>
         </li>
         <li className="nav-item">
-          <button>
+          <button className="cv">
             <a
-              className=""
               target="_blank"
               rel="noopener noreferrer"
               download
@@ -41,7 +40,7 @@ function Navbar() {
       <div className="menu-mobile">
         {open ? (
           <div className="menu-open">
-          <i
+            <i
               onClick={() => {
                 setOpen(false);
               }}
@@ -59,9 +58,8 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <button>
+                <button className="cv">
                   <a
-                    className="link"
                     target="_blank"
                     rel="noopener noreferrer"
                     download
@@ -72,7 +70,6 @@ function Navbar() {
                 </button>
               </li>
             </ul>
-            
           </div>
         ) : (
           <i
