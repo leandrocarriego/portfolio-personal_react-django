@@ -10,14 +10,12 @@ function Home() {
   return (
     <>
       <Layout>
-      <Navbar/>
-        <div className="index">
-          <Header/>
-          <About/>
-          <Skills/>
-          <SelectedProjects/>
-          <Contact/>
-        </div>
+        <Navbar/>
+        <Header />
+        <About />
+        <Skills />
+        <SelectedProjects />
+        <Contact />
       </Layout>
     </>
   );

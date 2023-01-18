@@ -1,11 +1,13 @@
 function Header() {
   return (
-    <section className="presentation container" id="top">
+    <section className="presentation" id="top">
       <div>
         <h2 className="title">Full Stack Developer</h2>
         <ul>
           <li>Creativo</li>
+          <li>|</li>
           <li>Autodidacta</li>
+          <li>|</li>
           <li>Músico</li>
         </ul>
         <div>
