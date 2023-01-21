@@ -1,6 +1,6 @@
 function About() {
     return(
-        <section className="about container" id="about">
+        <section className="about" id="about">
             <p>
               Soy una persona de mente inquieta, en aprendizaje constante. Me
               gusta la innovación y la creatividad, los entornos donde haya
