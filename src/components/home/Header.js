@@ -4,11 +4,11 @@ function Header() {
       <div>
         <h2 className="title">Full Stack Developer</h2>
         <ul>
-          <li>Creativo</li>
+          <li>CREATIVO</li>
           <li>|</li>
-          <li>Autodidacta</li>
+          <li>AUTODIDACTA</li>
           <li>|</li>
-          <li>Músico</li>
+          <li>MÚSICO</li>
         </ul>
         <div>
         <button className="w-50 btn border" type="button">

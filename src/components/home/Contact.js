@@ -1,8 +1,8 @@
 function Contact() {
     return(
-      <section className="contact" id="contact">
-      <div className="contact">
-        <section className="container contacto-encabezado">
+      <section className="contact pt-5" id="contact">
+      <div className="contact ">
+        <section className="container">
           <h1 className="display-2 fw-bold text-center">CONTACTO</h1>
         </section>
         <section>
@@ -11,17 +11,7 @@ function Contact() {
             action=""
             method="POST"
           >
-            <label className="pb-1" for="name">
-              Nombre y apellido
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Ej. Alan Brito Delgado"
-              required
-            />
-            <label className="pt-4 pb-1" for="email">
+            <label className="pb-1" for="email">
               Email
             </label>
             <input
@@ -31,22 +21,12 @@ function Contact() {
               placeholder="Ej. alanbritodelgadok-po@gmail.com"
               required
             />
-            <label className="pt-4 pb-1" for="telefono">
-              {" "}
-              Telefono{" "}
-            </label>
-            <input
-              type="tel"
-              name="telefono"
-              id="telefono"
-              placeholder="Ej. +54 9 1122334455"
-            />
             <p className="pt-4 mb-1">Puedes dejarnos aqui tu consulta</p>
             <textarea
               class="mb-2"
               name="comentario"
               cols="30"
-              rows="10"
+              rows="6"
               placeholder="Detalle aqui su consulta..."
             ></textarea>
             <button
