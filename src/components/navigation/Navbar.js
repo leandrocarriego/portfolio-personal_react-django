@@ -40,12 +40,14 @@ function Navbar() {
       <div className="menu-mobile">
         {open ? (
           <div className="menu-open">
+            <div>
             <i
               onClick={() => {
                 setOpen(false);
               }}
               className="bi bi-x"
             ></i>
+            </div>  
             <ul className="navbar-nav nav-mobile">
               <li className="nav-item">
                 <a className="link" href="#selectedProjects">
@@ -70,6 +72,34 @@ function Navbar() {
                 </button>
               </li>
             </ul>
+
+            <section className="mb-4 contact-links">
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/leandro-carriego/"
+            role="button"
+            target="_blank"
+          >
+            <i className="bi bi-linkedin"></i>
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/leandrocarriego/"
+            role="button"
+            target="_blank"
+          >
+            <i className="bi bi-github"></i>
+          </a>
+
+          <a
+            className="btn btn-outline-light btn-floating m-1"
+            href="mailto:leandrocarriego@hotmail.com"
+            role="button"
+          >
+            <i className="bi bi-envelope"></i>
+          </a>
+        </section>
           </div>
         ) : (
           <i

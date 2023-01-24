@@ -3,43 +3,33 @@ function Skills() {
     <section className="skills">
       <div>
         <h2>SKILLS</h2>
-        {/* <ul>
-          <li className="skill">Python</li>
-          <li className="skill">Django</li>
-          <li className="skill">JavaScript</li>
-          <li className="skill">React.js</li>
-          <li className="skill">HTML5</li>
-          <li className="skill">CSS</li>
-          <li className="skill">Sass</li>
-          <li className="skill">Bootstrap</li>
-          <li className="skill">Git</li> 
-          <li className="skill"><i class="bi bi-play"></i>Python</li>
-          <li className="skill"><i class="bi bi-play"></i>Django</li>
-          <li className="skill"><i class="bi bi-play"></i>JavaScript</li>
-          <li className="skill"><i class="bi bi-play"></i>React.js</li>
-          <li className="skill"><i class="bi bi-play"></i>HTML5</li>
-          <li className="skill"><i class="bi bi-play"></i>CSS</li>
-          <li className="skill"><i class="bi bi-play"></i>Sass</li>
-          <li className="skill"><i class="bi bi-play"></i>Bootstrap</li>
-          <li className="skill"><i class="bi bi-play"></i>Git</li>
-        </ul> */}
-        {/* <div class="card">
-
-          <div class="title">Expert</div>
-
-          <div class="features">
-            <ul>
-              <li><span>10</span> Edits</li>
-              <li><span>10GB</span> Storage</li>
-              <li><span>9</span> Pages</li>
-              <li><span>5</span> Hour free support</li>
+        <div className="skills-container">
+          <div className="skill-card">
+            <h3>JavaScript</h3>
+            <ul className="project-skills">
+              <li><i class="bi bi-arrow-right-short"></i>React.js</li>
+              <li><i class="bi bi-arrow-right-short"></i>Next.js</li>
             </ul>
           </div>
+          <div className="skill-card">
+            <h3>Python</h3>
+            <ul className="project-skills">
+              <li><i class="bi bi-arrow-right-short"></i>Django</li>
+              <li><i class="bi bi-arrow-right-short"></i>Django REST</li>
+            </ul>
+          </div>
+          <div className="skill-card">
+            <h3>Desarrollo web</h3>
+            <ul className="project-skills">
+              <li><i class="bi bi-arrow-right-short"></i>HTML5</li>
+              <li><i class="bi bi-arrow-right-short"></i>CSS</li>
+              <li><i class="bi bi-arrow-right-short"></i>SCSS</li>
+              <li><i class="bi bi-arrow-right-short"></i>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
 
-          <a href="#" class="btn">Check it out</a>
-
-        </div> */}
-        <div className="card-container">
+        {/* <div className="card-container">
         <div class="card">
           <div class="title">Python</div>
         </div>
@@ -67,7 +57,7 @@ function Skills() {
         <div class="card">
           <div class="title">Git</div>
         </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

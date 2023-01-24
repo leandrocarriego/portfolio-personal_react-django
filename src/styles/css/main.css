@@ -92,10 +92,24 @@ body {
 }
 .navbar .menu-mobile .menu-open {
   background-color: rgba(4, 4, 4, 0.8392156863);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
+.navbar .menu-mobile .menu-open div {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.navbar .menu-mobile .menu-open div i {
+  padding-right: 0.3em;
+}
 .navbar .menu-mobile .menu-open .nav-mobile {
+  margin-bottom: 5em;
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -104,6 +118,7 @@ body {
 }
 .navbar .menu-mobile .menu-open .nav-mobile .nav-item .nav-link {
   color: #fff;
+  font-size: 1.5em;
 }
 .navbar .menu-mobile .menu-open .nav-mobile .nav-item .nav-link:hover {
   color: #d2cfcf;
@@ -114,6 +129,12 @@ body {
   padding: 0.7em;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 11px;
+}
+.navbar .menu-mobile .menu-open .contact-links {
+  padding-bottom: 3em;
+}
+.navbar .menu-mobile .menu-open .contact-links .btn .bi {
+  font-size: 1.5em;
 }
 .navbar .menu-mobile .bi {
   font-size: 3em;
@@ -215,7 +236,6 @@ footer .autor a:hover {
 }
 
 .skills {
-  background-color: #141414;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -239,55 +259,42 @@ footer .autor a:hover {
 .skills div h2 {
   font-family: sans-serif;
   font-size: 2.2rem;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: 1em;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #fff;
 }
-.skills div .card-container {
+.skills div .skills-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  .skills div .card-container {
+  .skills div .skills-container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-.skills div .card-container .card {
-  margin-bottom: 1em;
+.skills div .skills-container .skill-card {
   background: #000;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  width: 10em;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   padding: 1em;
-  text-align: center;
   color: white;
+  width: 60%;
 }
-.skills div .card-container .card .title {
-  font-size: 25px;
-}
-.skills div .card-container .card .features ul {
+.skills div .skills-container .skill-card ul {
   padding: 0;
-  margin: 20px 0 50px 0;
   list-style-type: none;
 }
-.skills div .card-container .card .features ul li {
-  margin: 10px 0;
-  font-size: 14px;
-}
-.skills div .card-container .card .features ul li span {
-  border-bottom: 2px dotted #f6b352;
-}
-
 .selected-projects {
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em 1em;
+  padding: 3em 1em 1em 1em;
 }
 @media screen and (min-width: 768px) {
   .selected-projects {
@@ -295,19 +302,24 @@ footer .autor a:hover {
   }
 }
 .selected-projects div {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .selected-projects div h2 {
   font-family: sans-serif;
   font-size: 2.2rem;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #fff;
 }
 .selected-projects div .projects-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 2.5em;
 }
 @media screen and (min-width: 768px) {
   .selected-projects div .projects-container {
@@ -315,15 +327,49 @@ footer .autor a:hover {
     flex-wrap: wrap;
   }
 }
-.selected-projects div .projects-container .projects-container .projects-card .project-description .project-skills {
+.selected-projects div .projects-container .project-card .img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.selected-projects div .projects-container .project-card .project-description {
+  background-color: #141414;
+  padding: 1em;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+}
+.selected-projects div .projects-container .project-card .project-description h3 {
+  width: 100%;
+}
+.selected-projects div .projects-container .project-card .project-description .project-skills {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   flex-wrap: wrap;
+  padding: 0;
+  gap: 1em;
+}
+.selected-projects div .projects-container .project-card .project-description .project-links {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+}
+.selected-projects div .projects-container .project-card .project-description .project-links li a .bi {
+  font-size: 1.5em;
 }
 .selected-projects .btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1em;
 }
 
 .contact {

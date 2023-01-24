@@ -59,9 +59,23 @@
     }
     .menu-open {
       background-color: #040404d6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       width: 100vw;
       height: 100vh;
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        i {
+          padding-right: .3em;
+        }
+      }
       .nav-mobile {
+        margin-bottom: 5em;
         height: 30%;
         display: flex;
         flex-direction: column;
@@ -70,6 +84,7 @@
         .nav-item {
           .nav-link {
             color: #fff;
+            font-size: 1.5em;
             &:hover {
               color: #d2cfcf;
             }
@@ -82,6 +97,14 @@
             padding: 0.7em;
             border: 1px solid rgb(0, 0, 0);
             border-radius: 11px;
+          }
+        }
+      }
+      .contact-links {
+        padding-bottom: 3em;
+        .btn {
+          .bi {
+            font-size: 1.5em;
           }
         }
       }
